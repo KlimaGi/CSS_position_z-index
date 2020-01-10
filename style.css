@@ -1,0 +1,83 @@
+/********  all **********/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/***** image block ******/
+.container {
+    background-color: #f2f2f2;
+    width: 645px;
+    margin: 45px auto;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    top: auto;
+    left: 25%;
+}
+
+img {
+    margin: 5px;
+    border: 1px solid #2d7086;
+}
+
+.cover {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+/*** opacity_text_block ***/
+.color_block {
+    padding: 5px 5px 10px;
+    background-color: rgb(140, 198, 217, .4);
+    width: 191px;
+    height: 20px;
+}
+
+.text {
+    color: coral;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: 'Athiti', sans-serif;
+}
+
+.block_1 {
+    position: absolute;
+    top: 51%;
+    left: 67%;
+    z-index: 2;
+}
+
+.block_2 {
+    position: absolute;
+    top: 87%;
+    left: 3%;
+    z-index: 2;
+}
+
+/**** speech bubbles ******/
+
+.speech-bubble {
+    position: absolute;
+    background: rgb(140, 198, 217, .4);
+    border-radius: 20px;
+    width: 180px;
+    top: -26px;
+    left: 244px;
+    padding: 5px;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 24px solid transparent;
+    border-top-color: rgb(140, 198, 217, .4);
+    border-bottom: 0;
+    margin-left: -24px;
+    margin-bottom: -24px;
+}
